@@ -20,9 +20,7 @@ defmodule CubeConundrum do
   end
 
   def checkGamePart2(aLine) do
-    currentColours = %{"red" => 0, "green" => 2, "blue" => 0}
     tuples = String.replace(aLine, ~r/[,.;:\n]/, "") |> String.split(" ") |> Enum.chunk_every(2)
-    {game, _} = hd(tuples) |> tl |> hd |> Integer.parse
     Enum.group_by(tl(tuples), &List.last/1, &List.first/1) |>
     Map.values |>
     Enum.map(fn aList -> Enum.map(aList, &String.to_integer/1) |>

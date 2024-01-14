@@ -1,6 +1,10 @@
 # Aoc2023
 
-**TODO: Add description**
+## Solutions of Advent of Code 2023 written in Elixir
+
+The input files can be found under inputs/
+
+The solution elixir modules - one module per question can be found under lib/
 
 ## Installation
 
