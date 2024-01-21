@@ -12,6 +12,8 @@ defmodule Aoc2023 do
     readFileLineByLine("./inputs/q2.txt", &CubeConundrum.checkGamePart2/1, "Question 2 part 2: Cube Condurum")
     solveWithWholeFile("./inputs/q3.txt", &GearRatios.gearRatiosPart1/1, "Question 3 part 1: Gondola Parts")
     solveWithWholeFile("./inputs/q3.txt", &GearRatios.gearRatiosPart2/1, "Question 3 part 2: Gears")
+    readFileLineByLine("./inputs/q4.txt", &ScratchCards.solvePart1/1, "Question 4 part 1: Scratch Cards")
+    solveWithWholeFile("./inputs/q4.txt", &ScratchCards.solvePart2/1, "Question 4 part 2: Scratch Cards")
   end
 
   @doc """
